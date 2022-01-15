@@ -119,7 +119,7 @@ userSchema.pre('save', function (next) {
 });
 
 // returns bool definig if password is equal or not
-userSchema.methods.comparePassword = (password) => {
+userSchema.methods.comparePassword = function(password){
     return bcrypt.compareSync(password, this.password);
 }
 
