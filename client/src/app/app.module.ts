@@ -11,9 +11,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 /* ANGULAR MATERIAL COMPONENTS */
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule} from '@angular/material/button'
 
 
 @NgModule({
@@ -31,7 +36,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    FlexLayoutModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   // this is the template/html file of our component
   templateUrl: './app.component.html',
   // this is the style/css file of our component
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 
 // Everything you export here is going to be available

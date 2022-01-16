@@ -1,5 +1,54 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-between center" color="primary" style="height: 70px;">
+
+  <button (click)=" slideMenu();" fxHide.gt-sm mat-fab class="menu-button"
+    aria-label="Example icon button with a home icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a routerLink="/" routerLinkActive="active">
+    <h1>
+      Kickstart
+    </h1>
+  </a>
+
+  <ul fxHide.lt-md>
+    <li>
+      <a *ngIf="loggedIn()" routerLink="/home" routerLinkActive="active" aria-current="page">
+        <h2>Home</h2>
+      </a>
+    </li>
+    <li>
+      <a *ngIf="loggedIn()" routerLink="/profile" routerLinkActive="active" class="nav-link">
+        <h2>Profile</h2>
+      </a>
+    </li>
+    <li>
+      <a *ngIf="loggedIn()" routerLink="/login" class="nav-link" (click)="logoutUser()">
+        <h2>Logout</h2>
+      </a>
+    </li>
+    <li>
+      <a *ngIf="!loggedIn()" routerLink="/register" routerLinkActive="active" class="nav-link">Register</a>
+    </li>
+    <li>
+      <a *ngIf="!loggedIn()" routerLink="/login" routerLinkActive="active" class="nav-link">Login</a>
+    </li>
+  </ul>
+</mat-toolbar>
+
+<div class="slide-menu" [ngClass]="slideMenuClass" fxLayout="column" fxHide.gt-sm fxLayoutAlign="space-evenly center">
+  <button class="clear-button" [ngClass]="slideMenuClass" (click)=" slideMenu();" fxHide.gt-sm mat-fab
+    aria-label="Example icon button with a home icon">
+    <mat-icon>clear</mat-icon>
+  </button>
+  <a *ngIf="loggedIn()" routerLink="/home" routerLinkActive="active" aria-current="page">Home</a>
+  <a *ngIf="loggedIn()" routerLink="/profile" routerLinkActive="active" class="nav-link">Profile</a>
+  <a *ngIf="loggedIn()" routerLink="/login" class="nav-link" (click)="logoutUser()">Logout</a>
+  <a *ngIf="!loggedIn()" routerLink="/register" routerLinkActive="active" class="nav-link">Register</a>
+  <a *ngIf="!loggedIn()" routerLink="/login" routerLinkActive="active" class="nav-link">Login</a>
+</div>
 
 
+<!--
 <div class="container">
   <header class="d-flex justify-content-center py-3">
     <ul class="nav nav-pills">
@@ -11,3 +60,4 @@
     </ul>
   </header>
 </div>
+-->

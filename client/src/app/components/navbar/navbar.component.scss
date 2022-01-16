@@ -1,0 +1,97 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:visited{
+  color: white;
+}
+
+.menu-button {
+  border: none;
+  box-shadow: none;
+  color: white;
+  background-color: rgba(0,0,0,0);
+}
+
+mat-icon {
+  background-color: rgba(0,0,0,0);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  transition: 0.3s color;
+}
+
+li a:hover {
+  color: #b8baba;
+}
+
+.discord-icon{
+  position: relative;
+  top: 7px;
+  left: 0px;
+  font-size: 2rem;
+  transition: 0.6s transform;
+}
+
+.discord-icon:hover{
+  transform: rotate(360deg);
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+.clear-button{
+  transition: 0.5s transform;
+  border: none;
+  box-shadow: none;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  z-index: 3;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.hidden{
+  transform: translateX(-150vw);
+}
+
+.shown{
+  transform: translateX(0vw);
+}
+
+.slide-menu{
+  z-index: 1000000;
+  transition: 0.5s transform;
+  position: fixed;
+  font-family: 'Roboto', sans-serif;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #212121;
+}
+
