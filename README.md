@@ -9,7 +9,7 @@ To get the project up and running you need to call the command in the /server fo
 ```
 npm install
 ```
-Next you need to create a file in the /server folder called ```.env``` which contains the database name the server should connect to.
+Next you need to create a file in the /server folder called ```.env``` which contains the database name, the server should connect to.
 The ```.env``` file content should look like this:
 ```
 DB_NAME=yourdatabasename
