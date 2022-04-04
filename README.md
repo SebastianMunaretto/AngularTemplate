@@ -9,10 +9,12 @@ To get the project up and running you need to call the command in the /server fo
 ```
 npm install
 ```
-Next you need to create a file in the /server folder called ```.env``` which contains the database name, the server should connect to.
+Next, you need to create a file in the /server folder called ```.env``` which contains the database name and the secret (key you should not share with other people).
+
 The ```.env``` file content should look like this:
 ```
 DB_NAME=yourdatabasename
+SECRET=topsecret
 ```
 Now you can call ```npm start``` in the /server folder and ```ng serve``` in the /client folder and the app should be accessible under the
 URL ```localhost:4200```
