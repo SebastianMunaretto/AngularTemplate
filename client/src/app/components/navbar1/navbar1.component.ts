@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: 'app-navbar1',
+  templateUrl: './navbar1.component.html',
+  styleUrls: ['./navbar1.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class Navbar1Component implements OnInit {
 
   helper;
   slideMenuClass: string;
