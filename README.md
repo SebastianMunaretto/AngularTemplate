@@ -21,6 +21,18 @@ URL ```localhost:4200```
 
 Feel free to customize the app the way you want.
 
+### Navbar types
+
+As default the second navbar type is selected. If you want to use the alternative navbar type you have to change the app.component.html file like this
+```
+<app-navbar1></app-navbar1>
+
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+```
+
 ### Versions used
 - Node: v16.11.1
 - Angular: v12.0.4
